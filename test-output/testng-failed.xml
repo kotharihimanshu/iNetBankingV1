@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [INetBankigV1]">
+  <listeners>
+    <listener class-name="com.iNetbanking.utilities.Reporting"/>
+  </listeners>
+  <test name="BankingAppchrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.iNetbanking.testcases.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.iNetbanking.testcases.LoginTest -->
+    </classes>
+  </test> <!-- BankingAppchrome Test(failed) -->
+</suite> <!-- Failed suite [INetBankigV1] -->
